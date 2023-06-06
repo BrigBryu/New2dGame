@@ -1,0 +1,22 @@
+Map making
+0 - grass
+1 - wall
+2 - water
+3 - earth
+4 - tree
+5 - sand
+
+Notes
+- Key at x:30 y:14
+- Key at x:38 y:44
+- Key at x:11 y:30
+- Chest at x:34 y:5
+
+Changing values
+    - Change start go to Player class setDefaultValues method
+    - Change map go to TileManager class loadMap method and change the text file to be imported
+    - To change, add or delete an object go to class AssetSetter setObject method
+        ex placing key col/y 30 and row/x 14 from the top:
+            gp.obj[0] =  new OBJ_Key();
+            gp.obj[0].worldX = 30 * gp.tileSize;
+            gp.obj[0].worldY = 14 * gp.tileSize;
